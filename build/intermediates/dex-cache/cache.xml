@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/LanTuan/.android/build-cache/617de4a0a45f472e2281343a7d239424d4157bb9/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c5d103b270b3f3b50d8e6b44aa8e068b0de33426">
+        <dex dex="/Users/LanTuan/Documents/OrderIt/OrderItv2/app/build/intermediates/transforms/dex/env_prod/debug/folders/1000/10/classes_5ece85c603ad70b278b860201cfbd5dc9ebfb89a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/LanTuan/.android/build-cache/01052688fbd96501fe0c2b8601292c1aad3617a6/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="93c10d68ab5ea070f15782ae6d3a28d1f1d8f45e">
+        <dex dex="/Users/LanTuan/Documents/OrderIt/OrderItv2/app/build/intermediates/transforms/dex/env_prod/debug/folders/1000/10/classes_ab257713a6a8e4e7a33be764594b1eac7369be86/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/LanTuan/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.7/751f548c85fa49f330cecbb1875893f971b33c4e/gson-2.7.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
+        <dex dex="/Users/LanTuan/Documents/OrderIt/OrderItv2/app/build/intermediates/transforms/dex/env_prod/debug/folders/1000/10/gson-2.7_3857dc40ecb7fa66810a0b683a30c70cd455f1a4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/LanTuan/.android/build-cache/95af313c07acd032bf8cc71ffcd10eba6139313e/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/LanTuan/Documents/OrderIt/OrderItv2/app/build/intermediates/transforms/dex/env_prod/debug/folders/1000/10/classes_021de7319608f719b2538f00b547365f3733d2fc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/LanTuan/.android/build-cache/b6557767b27140d9fe10be81b49e8c0c3a42390c/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a3e61044038fb54cddf6b8dc79f41d2b57f42caf">
+        <dex dex="/Users/LanTuan/Documents/OrderIt/OrderItv2/app/build/intermediates/transforms/dex/env_prod/debug/folders/1000/10/classes_b243bca2d37de2c8bbdc17eb85f2867b72739c49/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/LanTuan/.android/build-cache/5f4394f6de6a31a6b529d2480208119674119a75/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fbb206f7a119f66ce171d95aae1225a5b209a8b7">
+        <dex dex="/Users/LanTuan/Documents/OrderIt/OrderItv2/app/build/intermediates/transforms/dex/env_prod/debug/folders/1000/10/classes_a217f4bcab34ed92e3bca64da4d20d6e8ed10989/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/LanTuan/.android/build-cache/dfd1f96f4aa5e5f307f5d81e5ce4f1f9235cfcae/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4b746ef0fd46acb5aaf3d9ab9a4cec22c28d3211">
+        <dex dex="/Users/LanTuan/Documents/OrderIt/OrderItv2/app/build/intermediates/transforms/dex/env_prod/debug/folders/1000/10/classes_48087a5131c97cd88a7b715043e127e0aa5ab6df/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/LanTuan/.android/build-cache/99211b9860578975d621368f17d186dc7eb0f8f1/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d6a04527c17597019dad82777c5094a3d60d1c33">
+        <dex dex="/Users/LanTuan/Documents/OrderIt/OrderItv2/app/build/intermediates/transforms/dex/env_prod/debug/folders/1000/10/classes_e56f1773fa30a10bc773ce7455b0473c040b710b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/LanTuan/.android/build-cache/b4c37a38ebef973e6ef3e3add7ca776d0c69f5f3/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="70f23cb87278f89aa51e6f57e8f0fd5266572d95">
+        <dex dex="/Users/LanTuan/Documents/OrderIt/OrderItv2/app/build/intermediates/transforms/dex/env_prod/debug/folders/1000/10/classes_3562d0653d958a23d0855fb61f3962d154450ae1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/LanTuan/Documents/OrderIt/OrderItv2/app/build/intermediates/incremental-runtime-classes/env_prod/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
+        <dex dex="/Users/LanTuan/Documents/OrderIt/OrderItv2/app/build/intermediates/transforms/dex/env_prod/debug/folders/1000/10000/instant-run_541d5cf1d8cdae4e9170e5815e0cc6e3770098bc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/LanTuan/Documents/OrderIt/OrderItv2/app/build/intermediates/incremental-classes/env_prod/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ffdfe53532796b7d511bb3afc1a0882caca1d00a">
+        <dex dex="/Users/LanTuan/Documents/OrderIt/OrderItv2/app/build/intermediates/transforms/dex/env_prod/debug/folders/1000/10000/instant-run-bootstrap_25dc5ddb1d2a76a578720e9cd0fcbc558e5058db/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/LanTuan/.android/build-cache/f5c833eb5dabd24f2e48c5e00b394b61bf486f9a/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="518768f3200963fbfec652f498da2c9d39245234">
+        <dex dex="/Users/LanTuan/Documents/OrderIt/OrderItv2/app/build/intermediates/transforms/dex/env_prod/debug/folders/1000/10/classes_9a07d7d3c720b000fdce448a68c2e75f914ecb14/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/LanTuan/.android/build-cache/71bf2a265911c458f1701600d9bef638eb8e1c0d/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5cc5ef8347a6bafa14556cbd35230aa9b3431bb0">
+        <dex dex="/Users/LanTuan/Documents/OrderIt/OrderItv2/app/build/intermediates/transforms/dex/env_prod/debug/folders/1000/10/classes_47f10ccb47cff4f6152ec1a9ef264ade964994a8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/LanTuan/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/20.0/89507701249388e1ed5ddcf8c41f4ce1be7831ef/guava-20.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="89507701249388e1ed5ddcf8c41f4ce1be7831ef">
+        <dex dex="/Users/LanTuan/Documents/OrderIt/OrderItv2/app/build/intermediates/transforms/dex/env_prod/debug/folders/1000/10/guava-20.0_9adfc833795ef693695e17c55a3884b1e166b896/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/LanTuan/.android/build-cache/b53610b8edfb21e26bdc86d59499157f81fb80f0/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="425c7b17887e5c3f8cbdf67ba171bc246f29b42c">
+        <dex dex="/Users/LanTuan/Documents/OrderIt/OrderItv2/app/build/intermediates/transforms/dex/env_prod/debug/folders/1000/10/classes_6bd88cffd4ec3ae0be35ec7b8f0fdc81e88470b9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/LanTuan/.android/build-cache/bb11370b86b63349b9307b14ab4fd51905780618/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="93c1199fcb0a34b980e6fff8350daff62e696ec2">
+        <dex dex="/Users/LanTuan/Documents/OrderIt/OrderItv2/app/build/intermediates/transforms/dex/env_prod/debug/folders/1000/10/classes_41e191bec3a44181d7caefae94b67bd410243dd9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/LanTuan/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.0/support-annotations-25.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="dd84903d2e1af25a6081ef9038ad863cb14ca3a0">
+        <dex dex="/Users/LanTuan/Documents/OrderIt/OrderItv2/app/build/intermediates/transforms/dex/env_prod/debug/folders/1000/10/support-annotations-25.3.0_50e1969766164364ea0f7005d8f5e0e6ef8f3171/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/LanTuan/.android/build-cache/c2288e5ef4b13173bc390cb59b9736b7d1d7f93d/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9ab787a20aae245b5b3651ae0b9c38459eb37715">
+        <dex dex="/Users/LanTuan/Documents/OrderIt/OrderItv2/app/build/intermediates/transforms/dex/env_prod/debug/folders/1000/10/classes_2d540931026662dce6dd31d099821065311f0af8/classes.dex" />
+    </item>
+
+</items>
