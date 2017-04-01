@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="D:\WorkHardMakePerfect\OrderItv2\app\build\intermediates\incremental-runtime-classes\env_prod\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
+        <dex dex="D:\WorkHardMakePerfect\OrderItv2\app\build\intermediates\transforms\dex\env_prod\debug\folders\1000\10000\instant-run_1797650c7b6ff079d141507cebd43c989d48cb5a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\WorkHardMakePerfect\OrderItv2\app\build\intermediates\incremental-classes\env_prod\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="74cc60fa69344418604329c09c2dd9ee56bd718b">
+        <dex dex="D:\WorkHardMakePerfect\OrderItv2\app\build\intermediates\transforms\dex\env_prod\debug\folders\1000\10000\instant-run-bootstrap_1626113877694c1bc5be5849cdec5c3442e38bee\classes.dex" />
+    </item>
+
+</items>

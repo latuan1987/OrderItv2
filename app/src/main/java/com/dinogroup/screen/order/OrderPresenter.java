@@ -7,7 +7,10 @@ import android.widget.Toast;
 
 import com.dinogroup.actionbar.ActionBarConfig;
 import com.dinogroup.actionbar.ActionBarOwner;
+import com.dinogroup.model.MenuCategory;
+import com.dinogroup.model.OrderItem;
 import com.dinogroup.model.TableItem;
+import com.dinogroup.repository.PresenterSharedRepository;
 import com.dinogroup.util.logging.Logger;
 import com.dinogroup.util.mortar.BaseViewPresenter;
 import com.google.firebase.auth.FirebaseAuth;
@@ -29,18 +32,23 @@ import flow.Flow;
 public class OrderPresenter extends BaseViewPresenter<OrderView>{
 
     private static final Logger LOG = Logger.getLogger(OrderPresenter.class);
-    private final String TAG = "HomePresenter";
+    private final String TAG = "OrderPresenter";
     private ActionBarOwner actionBarOwner;
+    private PresenterSharedRepository presenterSharedRepository;
 
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
 
     private final Flow flow;
 
+    private FirebaseDatabase database = FirebaseDatabase.getInstance();
+    private OrderView view = getView();
+
     @Inject
-    OrderPresenter(Flow flow, ActionBarOwner actionBarOwner) {
+    OrderPresenter(Flow flow, ActionBarOwner actionBarOwner, PresenterSharedRepository presenterSharedRepository) {
         this.flow = flow;
         this.actionBarOwner = actionBarOwner;
+        this.presenterSharedRepository = presenterSharedRepository;
     }
 
     @Override
@@ -67,35 +75,167 @@ public class OrderPresenter extends BaseViewPresenter<OrderView>{
             }
         };
         mAuth.addAuthStateListener(mAuthListener);
-        OrderView view = getView();
         if (view != null) {
             configureActionBar();
-            getTableData();
-            //view.addTableItemListener();
+
+            view.CreateListAdapter();
+
+            // Build data
+            makeMenuData();
+            makeRecentData();
+            makeOrderData();
+            makeTopRankData();
         }
     }
 
     private void configureActionBar() {
         ActionBarConfig config = new ActionBarConfig.Builder()
-                .title("Home")
+                .title("Order")
                 .visible(true)
                 .enableHomeAsUp(false)
                 .build();
         actionBarOwner.setConfig(config);
     }
 
-    private void getTableData() {
+    private void makeMenuGroupData() {
         // Get database reference
-        DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("biz/1/tables");
+        String refChild = "businesses/"+presenterSharedRepository.getCurrentBuzID()+"/menus/categories";
+        DatabaseReference databaseReference = database.getReference(refChild);
         ChildEventListener childEventListener = new ChildEventListener() {
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String previousChildName) {
                 Log.d(TAG, "onChildAdded:" + dataSnapshot.getKey());
-                TableItem table = dataSnapshot.getValue(TableItem.class);
-                if (table != null) {
-                    Log.d(TAG, "Table name is: " + table.getName());
-                    //display list of ponds
-                    //getView().updateTableList(table);
+                MenuCategory menuCategory = dataSnapshot.getValue(MenuCategory.class);
+                if (menuCategory != null) {
+                    // Notify to update data
+                    view.updateMenuData(menuCategory);
+                    addMenuItemListener(menuCategory.getId());
+                }
+            }
+
+            @Override
+            public void onChildChanged(DataSnapshot dataSnapshot, String previousChildName) {
+                Log.d(TAG, "onChildChanged:" + dataSnapshot.getKey());
+
+            }
+
+            @Override
+            public void onChildRemoved(DataSnapshot dataSnapshot) {
+                Log.d(TAG, "onChildRemoved:" + dataSnapshot.getKey());
+            }
+
+            @Override
+            public void onChildMoved(DataSnapshot dataSnapshot, String previousChildName) {
+                Log.d(TAG, "onChildMoved:" + dataSnapshot.getKey());
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+                LOG.error(TAG, "Failed to read value.", databaseError.toException());
+                Toast.makeText(getView().getContext(), "Failed to load data.",
+                        Toast.LENGTH_SHORT).show();
+            }
+        };
+        databaseReference.addChildEventListener(childEventListener);
+    }
+
+    private void makeRecentData() {
+        // Get database reference
+        String refChild = "businesses/"+presenterSharedRepository.getCurrentBuzID()+"/tables/"+presenterSharedRepository.getCurrentTableID()+"/recent";
+        DatabaseReference databaseReference = database.getReference(refChild);
+        ChildEventListener childEventListener = new ChildEventListener() {
+            @Override
+            public void onChildAdded(DataSnapshot dataSnapshot, String previousChildName) {
+                Log.d(TAG, "onChildAdded:" + dataSnapshot.getKey());
+                OrderItem orderItem = dataSnapshot.getValue(OrderItem.class);
+                if (orderItem != null) {
+                    // Notify to update data
+                    view.updateRecentData(orderItem);
+                }
+            }
+
+            @Override
+            public void onChildChanged(DataSnapshot dataSnapshot, String previousChildName) {
+                Log.d(TAG, "onChildChanged:" + dataSnapshot.getKey());
+
+            }
+
+            @Override
+            public void onChildRemoved(DataSnapshot dataSnapshot) {
+                Log.d(TAG, "onChildRemoved:" + dataSnapshot.getKey());
+            }
+
+            @Override
+            public void onChildMoved(DataSnapshot dataSnapshot, String previousChildName) {
+                Log.d(TAG, "onChildMoved:" + dataSnapshot.getKey());
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+                LOG.error(TAG, "Failed to read value.", databaseError.toException());
+                Toast.makeText(getView().getContext(), "Failed to load data.",
+                        Toast.LENGTH_SHORT).show();
+            }
+        };
+        databaseReference.addChildEventListener(childEventListener);
+    }
+
+    private void makeOrderData() {
+        // Get database reference
+        String refChild = "businesses/"+presenterSharedRepository.getCurrentBuzID()+"/tables/"+presenterSharedRepository.getCurrentTableID()+"/orders";
+        DatabaseReference databaseReference = database.getReference(refChild);
+        ChildEventListener childEventListener = new ChildEventListener() {
+            @Override
+            public void onChildAdded(DataSnapshot dataSnapshot, String previousChildName) {
+                Log.d(TAG, "onChildAdded:" + dataSnapshot.getKey());
+                OrderItem orderItem = dataSnapshot.getValue(OrderItem.class);
+                if (orderItem != null) {
+                    // Notify to update data
+                    view.updateOrderData(orderItem);
+                }
+            }
+
+            @Override
+            public void onChildChanged(DataSnapshot dataSnapshot, String previousChildName) {
+                Log.d(TAG, "onChildChanged:" + dataSnapshot.getKey());
+
+            }
+
+            @Override
+            public void onChildRemoved(DataSnapshot dataSnapshot) {
+                Log.d(TAG, "onChildRemoved:" + dataSnapshot.getKey());
+            }
+
+            @Override
+            public void onChildMoved(DataSnapshot dataSnapshot, String previousChildName) {
+                Log.d(TAG, "onChildMoved:" + dataSnapshot.getKey());
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+                LOG.error(TAG, "Failed to read value.", databaseError.toException());
+                Toast.makeText(getView().getContext(), "Failed to load data.",
+                        Toast.LENGTH_SHORT).show();
+            }
+        };
+        databaseReference.addChildEventListener(childEventListener);
+    }
+
+    private void makeTopRankData() {
+        // Get database reference
+        String refChild = "businesses/"+presenterSharedResposity.getCurrentBuzID()+"/menus/toprank";
+        DatabaseReference databaseReference = database.getReference(refChild);
+        ChildEventListener childEventListener = new ChildEventListener() {
+            @Override
+            public void onChildAdded(DataSnapshot dataSnapshot, String previousChildName) {
+                Log.d(TAG, "onChildAdded:" + dataSnapshot.getKey());
+                OrderItem orderItem = dataSnapshot.getValue(OrderItem.class);
+                if (orderItem != null) {
+                    // Notify to update data
+                    view.updateTopRankData(orderItem);
                 }
             }
 

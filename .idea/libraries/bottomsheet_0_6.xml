@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="bottomsheet-0.6">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/77dd313945f9e4326f66af48756f04d980e74f1c/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/77dd313945f9e4326f66af48756f04d980e74f1c/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.cocosw/bottomsheet/0.6/3b7eebb1319fffefdf4efccee1465d33708c7d68/bottomsheet-0.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
